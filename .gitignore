@@ -1,0 +1,26 @@
+# Environment Variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Database
+instance/*.db
+*.sqlite3
+
+# Large Data & Training Files
+ipl_json.zip
+catboost_info/
+prematch_model_tmp.json
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Static Assets (if auto-generated)
+# static/uploads/
