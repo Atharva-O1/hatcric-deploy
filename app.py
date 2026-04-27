@@ -872,6 +872,10 @@ def get_match_data(match_id: str):
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
+@app.route("/ads.txt")
+def serve_ads_txt():
+    return app.send_static_file("ads.txt")
+
 
 @app.route("/")
 def serve_dashboard():
